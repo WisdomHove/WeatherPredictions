@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(String args[]) {
-            String response = HttpRequest.excuteGet("https://api.openweathermap.org/data/2.5/weatherq="+CITY1+"&units=metric&appid=8294ab245382114f46a37b3c31376d41");
+            String response = HttpRequest.excuteGet("https://api.openweathermap.org/data/2.5/weather?q="+CITY1+"&units=metric&appid=8294ab245382114f46a37b3c31376d41");
             return response;
         }
 
